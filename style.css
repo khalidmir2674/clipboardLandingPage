@@ -1,0 +1,497 @@
+:root {
+    --baiJamFont: "Bai Jamjuree", sans-serif;
+
+    /* Primary */
+    --StrongCyan: hsl(171, 66%, 44%);
+    --StrongCyanBorder: hsl(171, 66%, 35%);
+    --LightBlue: hsl(233, 100%, 69%);
+    --LightBlueBorder: hsl(233, 100%, 55%);
+    --LightCyan: rgb(195, 252, 252);
+
+    /* Neutral */
+    --DarkGrayishBlue: hsl(210, 10%, 33%);
+    --GrayishBlue: hsl(201, 11%, 66%);
+
+    /* Body */
+    --Fontsize: 1.125rem;
+}
+
+body {
+    font-family: var(--baiJamFont);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: var(--DarkGrayishBlue);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 0;
+    font-weight: 600;
+    color: var(--DarkGrayishBlue);
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 0;
+    font-weight: 600;
+    color: var(--DarkGrayishBlue);
+    text-align: center;
+}
+
+main .hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95vh;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.heroImage {
+    position: absolute;
+    width: 100%;
+}
+
+.hero .btn {
+    margin: 40px 0 80px 0;
+}
+
+.hero .btn a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+}
+
+.hero .btn a:hover {
+    opacity: 0.8;
+}
+
+.hero .btn a:nth-child(1) {
+    background-color: var(--StrongCyan);
+    margin-right: 20px;
+    border-bottom: 3px solid var(--StrongCyanBorder);
+    box-shadow: 0px 5px 20px -8px black;
+}
+
+.hero .btn a:nth-child(2) {
+    background-color: var(--LightBlue);
+    border-radius: 50px;
+    border-bottom: 3px solid var(--LightBlueBorder);
+    box-shadow: 0px 5px 20px -8px black;
+}
+
+.hero .heroParagraph {
+    color: var(--GrayishBlue);
+    line-height: 1.6;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    width: 88%;
+    margin: 0 auto;
+}
+
+.features .featureCards {
+    padding: 50px;
+    margin-left: 50px;
+}
+
+.features .Paragraph {
+    color: var(--GrayishBlue);
+    line-height: 1.6;
+    margin-bottom: 80px;
+}
+
+.features .featureImage img {
+    width: 100%;
+}
+
+.clipboardAccess {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.clipboardAccess .clipDetail {
+    text-align: center;
+    max-width: 90%;
+}
+
+.clipboardAccess .clipPara {
+    color: var(--GrayishBlue);
+    line-height: 1.6;
+    margin-bottom: 60px;
+}
+
+.clipboardAccess .clipImage img {
+    width: 100%;
+}
+
+.moreFeatures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.moreFeatures p {
+    color: var(--GrayishBlue);
+    line-height: 1.6;
+}
+
+.moreFeatures .partnerNames {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 60px;
+}
+
+.moreFeatures .featureCards {
+    display: flex;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.featureCards .card {
+    text-align: center;
+    width: 60%;
+    margin: 60px auto;
+    padding: 0 40px;
+}
+
+.downloadBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto 0 auto;
+    max-width: 90%;
+}
+
+.downloadBtn h3 {
+    font-size: 1.5rem;
+}
+
+.downloadBtn p {
+    color: var(--GrayishBlue);
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.downloadBtn .btn2 a:nth-child(1){
+    background-color: var(--StrongCyan);
+    margin-right: 20px;
+    border-bottom: 3px solid var(--StrongCyanBorder);
+    box-shadow: 0px 5px 20px -8px black;
+}
+
+.downloadBtn .btn2 a:nth-child(2){
+    background-color: var(--LightBlue);
+    border-radius: 50px;
+    border-bottom: 3px solid var(--LightBlueBorder);
+    box-shadow: 0px 5px 20px -8px black;
+}
+
+.downloadBtn .btn2 {
+    margin: 40px 0 80px 0;
+}
+
+.downloadBtn .btn2 a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+}
+
+.downloadBtn .btn2 a:hover {
+    opacity: 0.8;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--LightCyan);
+    height: 120px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+footer .footerLogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+
+.footerLogo img {
+    width: 50px;
+}
+
+.footerLogo .footerLinks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.footerLogo .footerLinks a {
+    text-decoration: none;
+    color: black
+}
+
+.footerLogo .footerLinks a:hover {
+    color: var(--GrayishBlue);
+}
+
+footer .socialLogos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+}
+
+footer .socialLogos img:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+@media only screen and (max-width:1200px) {
+    .features .featureImage img {
+        margin-top: 100px;
+    }
+
+    main .hero {
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features .Paragraph {
+        margin-bottom: 50px;
+        margin-top: 10px;
+    }
+
+    .clipboardAccess {
+        margin-top: 0;
+    }
+
+    .features .featureImage img {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    footer .footerLogo {
+        width: 60%;
+    }
+
+    .partnerNames img {
+        width: 15%;
+    }
+
+    .features .featureImage img {
+        width: 75%;
+        margin: auto;
+    }
+
+    .features .featureImage {
+        text-align: center;
+    }
+
+    .clipboardAccess .clipImage img {
+        width: 75%;
+        margin: auto;
+    }
+
+    .clipboardAccess .clipImage{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    footer .footerLogo {
+        width: 70%;
+    }
+
+    footer .footerLogo img {
+        width: 10%;
+    }
+
+    footer .socialLogos {
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .hero .heroParagraph {
+        text-align: center;
+    }
+
+    .hero .btn a {
+        display: inline-block;
+    }
+
+    .hero .btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .hero .btn a:nth-child(1) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .features .Paragraph {
+       text-align: center;
+    }
+
+    .features .featureCards {
+        margin-left: 0;
+    }
+
+    .moreFeatures .featureCards {
+        width: 90%;
+    }
+
+    .featureCards .card {
+        padding: 0 20px;
+    }
+
+    .downloadBtn p {
+       text-align: center;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    main .hero {
+        height: 100vh;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        height: 370px;
+    }
+
+    footer .footerLogo {
+        flex-direction: column;
+        height: 250px;
+    }
+    .footerLogo .footerLinks {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 170px;
+    }
+
+    footer .footerLogo img {
+        width: 50px;
+    }
+
+    footer .socialLogos {
+        width: 30%;
+    }
+
+    .hero .heroLogo {
+        width: 30%;
+    }
+
+    .moreFeatures .featureCards {
+        flex-direction: column;
+    }
+
+    .featureCards .card {
+        padding: 0;
+        margin-bottom: 0;
+        margin-top: 40px;
+    }
+
+    .moreFeatures .partnerNames {
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .partnerNames img {
+        width: 30%;
+        margin-top: 40px;
+    }
+
+    main .hero {
+        width: 80%;
+    }
+
+    .features .featureCards {
+        padding: 50px 30px;
+        margin: 0 auto;
+    }
+
+    .featureCards .card {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    main .hero {
+        height: 130vh;
+        padding-top: 90px;
+    }
+
+    .hero .btn {
+        width: 90%;
+    }
+
+    .hero .btn a {
+        padding: 12px 70px;
+        font-weight: 500;
+    }
+
+    h1 {
+        margin-top:50px ;
+    }
+
+    .downloadBtn .btn2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80%;
+        text-align: center;
+        height: 110px;
+    }
+
+    .btn2 a {
+        font-weight: 500;
+    }
+
+    .downloadBtn .btn2 a:nth-child(1){
+        margin-right: 0;
+    }
+
+    .downloadBtn {
+        width: 80%;
+    }
+}
